@@ -48,9 +48,9 @@ $(function() {
 
           // Set the child values of the item
           todos.child(id).set({
-            description: content.description;
-            priority: content.priority;
-            status: status;
+            description: content.description,
+            priority: content.priority,
+            status: status
           });
         });
 
@@ -64,7 +64,7 @@ $(function() {
         newTodo.append(completeIcon).append(deleteIcon);
 
         // Append newTodo item to item with id #todo-list
-        $('todo-list').append(newTodo);
+        $('#todo-list').append(newTodo);
     };
 
     // Reading Data: Form submission
